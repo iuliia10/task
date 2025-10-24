@@ -39,7 +39,7 @@ $('#btnWeather').click(function() {
     success: function(result) {
       console.log(JSON.stringify(result));
 
-      if (result.status.name == "ok") {
+      if (result.status.name == "success") {
         $('#txtTemp').html(result['data']['weatherObservation']['temperature']);
         $('#txtStation').html(result['data']['weatherObservation']['stationName']);
       }
@@ -70,7 +70,7 @@ $('#btnEarth').click(function() {
     success: function(result) {
       console.log(JSON.stringify(result));
 
-      if (result.status.name == "ok") {
+      if (result.status.name == "success") {
         
         $('#txtMag').html(result['data'][0]['magnitude']);
       }
@@ -81,3 +81,4 @@ $('#btnEarth').click(function() {
   }); 
 
 });
+
