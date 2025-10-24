@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>GeoNames 3 API</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	<link rel="stylesheet" href="libs/css/style.css">
+
+	<script src="libs/js/jquery-2.2.3.min.js"></script>
+
+	<script src="libs/js/script.js"></script>
+
+</head>
+
+<body>
+
+	<h1>GeoNames API Examples</h1>
+
+<table>
+
+  <tr>
+    <td>Time Zone</td>
+    <td>
+      <input id="tzLat" type="text" placeholder="lat">
+      <input id="tzLng" type="text" placeholder="lng">
+    </td>
+    <td><button id="btnTz">Submit</button></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <table>
+        <tr><td>Country:</td><td id="txtCountry"></td></tr>
+        <tr><td>Time:</td><td id="txtTime"></td></tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Weather Nearby</td>
+    <td>
+      <input id="wLat" type="text" placeholder="lat">
+      <input id="wLng" type="text" placeholder="lng">
+    </td>
+    <td><button id="btnWeather">Submit</button></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <table>
+        <tr><td>Station:</td><td id="txtStation"></td></tr>
+        <tr><td>Temperature:</td><td id="txtTemp"></td></tr>
+      </table>
+    </td>
+  </tr>
+
+ 
+  <tr>
+    <td>Earthquakes</td>
+    <td>
+      <input id="eqNorth" type="text" placeholder="north">
+      <input id="eqSouth" type="text" placeholder="south">
+      <input id="eqEast"  type="text" placeholder="east">
+      <input id="eqWest"  type="text" placeholder="west">
+    </td>
+    <td><button id="btnEarth">Submit</button></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <table>
+        <tr><td>Magnitude:</td><td id="txtMag"></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>
